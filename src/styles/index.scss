@@ -1,0 +1,45 @@
+@import './variables';
+
+@font-face {
+  font-family: 'Monserrat Regular';
+  src: url('../assets/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Monserrat Bold';
+  src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { background: $body_background_color }
+
+.container-fluid { width: 100% }
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+::placeholer {
+  color: $placeholder_color;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: $placeholder_color;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: $placeholder_color;
+  text-transform: uppercase;
+  opacity: 1;
+}

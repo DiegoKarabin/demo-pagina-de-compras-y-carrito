@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.promoBanner {
+  background: $third_color;
+
+  p {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding: 5px 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Monserrat Bold';
+  }
+}
