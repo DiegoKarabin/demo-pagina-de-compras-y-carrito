@@ -18,14 +18,6 @@
 
 body { background: $body_background_color }
 
-.container-fluid { width: 100% }
-
-.container {
-  margin: auto;
-  width: 100%;
-  max-width: 1000px;
-}
-
 ::placeholer {
   color: $placeholder_color;
   text-transform: uppercase;

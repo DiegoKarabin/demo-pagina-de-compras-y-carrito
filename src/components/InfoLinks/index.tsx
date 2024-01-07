@@ -1,82 +1,83 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { ActionInput } from '../ActionInput';
+import { FooterInfoTitle } from '../FooterInfoTitle';
+import { ContainerFluid } from '../ContainerFluid';
+import { Container } from '../Container';
 
 export const InfoLinks = () => (
   <>
-    <div className={`container-fluid ${styles.infoLinksSection}`}>
-      <div className={`container ${styles.infoLinksContainer}`}>
+    <ContainerFluid className={styles.infoLinksSection}>
+      <Container className={styles.infoLinksContainer}>
         <div className={styles.infoLinksListContainer}>
-          <h4 className={`text-uppercase ${styles.infoLinksListTitle}`}>
+          <FooterInfoTitle className={styles.infoLinksListTitle}>
             Servicio al cliente
-          </h4>
+          </FooterInfoTitle>
           <ul className={styles.infoLinksList}>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Contáctenos
               </Link>
             </li>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Cambios y devoluciones
               </Link>
             </li>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Políticas de la tienda
               </Link>
             </li>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Políticas de datos
               </Link>
             </li>
           </ul>
         </div>
         <div className={styles.infoLinksListContainer}>
-          <h4 className={`text-uppercase ${styles.infoLinksListTitle}`}>
+          <FooterInfoTitle className={styles.infoLinksListTitle}>
             Mi cuenta
-          </h4>
+          </FooterInfoTitle>
           <ul className={styles.infoLinksList}>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Mis pedidos
               </Link>
             </li>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Mis devoluciones
               </Link>
             </li>
           </ul>
         </div>
         <div className={styles.infoLinksListContainer}>
-          <h4 className={`text-uppercase ${styles.infoLinksListTitle}`}>
+          <FooterInfoTitle className={styles.infoLinksListTitle}>
             Recursos
-          </h4>
+          </FooterInfoTitle>
           <ul className={styles.infoLinksList}>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Tiendas
               </Link>
             </li>
             <li>
-              <Link to="#" className={`text-uppercase ${styles.infoLink}`}>
+              <Link to="#" className={`text-uppercase`}>
                 Devoluciones
               </Link>
             </li>
           </ul>
         </div>
         <div className={styles.newsletterFormContainer}>
-          <h4 className={`text-uppercase ${styles.newsletterFormTitle}`}>
-            Newsletter
-          </h4>
+          <FooterInfoTitle className={styles.newsletterFormTitle}>Newsletter</FooterInfoTitle>
           <p>
             Regístrate para ser el primero en recibir nuestras noticias
           </p>
           <ActionInput placeholder="e-mail" className={styles.newsletterEmailInput} />
         </div>
-      </div>
-    </div>
+      </Container>
+    </ContainerFluid>
   </>
 );

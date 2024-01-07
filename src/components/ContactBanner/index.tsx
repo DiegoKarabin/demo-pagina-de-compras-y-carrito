@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
+import { ContainerFluid } from '../ContainerFluid';
+import { Container } from '../Container';
 
 export const ContactBanner = () => (
   <>
-    <div className={`container-fluid ${styles.contactBanner}`}>
-      <div className="container">
+    <ContainerFluid className={styles.contactBanner}>
+      <Container>
         <ul>
           <li>
             <Link to="#">
@@ -22,7 +24,7 @@ export const ContactBanner = () => (
             </Link>
           </li>
         </ul>
-      </div>
-    </div>
+      </Container>
+    </ContainerFluid>
   </>
 )

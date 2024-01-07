@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
+import { ContainerFluid } from '../ContainerFluid';
+import { Container } from '../Container';
 
 export const SocialNetworks = () => (
   <>
-    <div className={`container-fluid ${styles.socialNetworksSection}`}>
-      <div className={`container ${styles.socialNetworksContainer}`}>
+    <ContainerFluid className={styles.socialNetworksSection}>
+      <Container className={styles.socialNetworksContainer}>
         <p className={styles.instagramUsername}>@hushpuppiesco</p>
         <div className={styles.divider}></div>
         <div className={styles.socialNetworksLinks}>
@@ -15,7 +17,7 @@ export const SocialNetworks = () => (
             <i className="bi bi-instagram"></i>
           </Link>
         </div>
-      </div>
-    </div>
+      </Container>
+    </ContainerFluid>
   </>
 );
