@@ -2,12 +2,9 @@
 
 .navbar {
   ul.navbarList {
-    list-style-type: none;
     display: flex;
 
     li .navbarLink {
-      text-decoration: none;
-      color: $text_color;
       margin: 0 30px 0 30px;
       font-size: 16px;
       text-transform: uppercase;

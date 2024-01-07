@@ -14,26 +14,6 @@
     flex-flow: column;
     justify-content: space-between;
 
-    .inputContainer {
-      border: 1px solid #000;
-      display: flex;
-      align-items: stretch;
-
-      input {
-        border: none;
-        outline: none;
-        flex: 1;
-        color: $text_color;
-        font-family: 'Monserrat Regular';
-      }
-
-      input, .iconContainer { padding: 10px }
-
-      .iconContainer {
-        cursor: pointer;
-      }
-    }
-
     .promoText {
       font-family: 'Monserrat Regular';
       color: $third_color;

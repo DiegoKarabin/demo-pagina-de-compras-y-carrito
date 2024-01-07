@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.socialNetworksSection {
+  background: #e7e6e2;
+
+  .socialNetworksContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  p.instagramUsername {
+    text-transform: uppercase;
+    text-align: center;
+    color: $footer_social_networks_text_color;
+    font-size: 28px;
+    padding: 15px 0 15px 0;
+  }
+
+  .divider {
+    height: 0;
+    border: 1px solid $footer_social_networks_text_color;
+    width: 130px;
+  }
+
+  .socialNetworksLinks .socialNetworksLinkItem {
+    display: inline-block;
+    padding: 15px;
+    color: $footer_social_networks_text_color;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}

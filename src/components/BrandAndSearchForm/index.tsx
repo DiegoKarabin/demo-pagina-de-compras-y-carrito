@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
+import { ActionInput } from '../ActionInput';
 
 export const BrandAndSearchForm = () => (
   <>
@@ -10,12 +11,7 @@ export const BrandAndSearchForm = () => (
         </Link>
       </div>
       <div className={styles.searchContainer}>
-        <div className={styles.inputContainer}>
-          <input type="text" placeholder="Buscar" />
-          <span className={styles.iconContainer}>
-            <i className="bi bi-chevron-right"></i>
-          </span>
-        </div>
+        <ActionInput placeholder="Buscar" />
         <p className={styles.promoText}>
           Envío gratis para pedidos superiores a $300.000
         </p>

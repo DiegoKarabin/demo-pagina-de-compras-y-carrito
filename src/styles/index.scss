@@ -43,3 +43,16 @@ body { background: $body_background_color }
   text-transform: uppercase;
   opacity: 1;
 }
+
+a {
+  text-decoration: none;
+  color: $text_color;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
