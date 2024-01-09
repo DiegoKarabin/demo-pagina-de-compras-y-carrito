@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+h3.title {
+  color: $text_color;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $text_color;
+  margin-bottom: 10px;
+}

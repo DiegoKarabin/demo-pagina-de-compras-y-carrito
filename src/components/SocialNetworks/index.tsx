@@ -7,7 +7,7 @@ export const SocialNetworks = () => (
   <>
     <ContainerFluid className={styles.socialNetworksSection}>
       <Container className={styles.socialNetworksContainer}>
-        <p className={styles.instagramUsername}>@hushpuppiesco</p>
+        <p className={`${styles.instagramUsername} text-uppercase`}>@hushpuppiesco</p>
         <div className={styles.divider}></div>
         <div className={styles.socialNetworksLinks}>
           <Link to="#" className={styles.socialNetworksLinkItem}>

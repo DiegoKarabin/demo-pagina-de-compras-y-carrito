@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.descriptionContainer {
+  padding-top: 30px;
+
+  p.description {
+    color: $text_secondary_color;
+    font-family: 'Monserrat Regular';
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.sizeSelector {
+  margin-top: 20px;
+
+  .sizesGrid {
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+
+    .size {
+      aspect-ratio: 1 / 1;
+      display: grid;
+      place-content: center;
+      font-family: 'Monserrat Regular';
+      background: $text_third_color;
+      color: #000;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

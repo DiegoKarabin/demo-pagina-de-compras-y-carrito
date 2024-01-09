@@ -2,11 +2,12 @@
 
 .infoLinksSection {
   background: #fff;
+  padding-bottom: 30px;
 
   .infoLinksContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-gap: 35px;
 
     .infoLinksListTitle, .newsletterFormTitle {
       margin-top: 20px;

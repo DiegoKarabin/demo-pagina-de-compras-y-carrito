@@ -1,6 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { Category } from './pages/Category';
+import { Navigate, createBrowserRouter } from 'react-router-dom';
 import { Product } from './pages/Product';
 import { ErrorPage } from './pages/Error';
 import { Root } from './pages/Root';
@@ -13,11 +11,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Home />
-      },
-      {
-        path: 'categories/:category',
-        element: <Category />,
+        element: <Navigate to="/products/0" />
       },
       {
         path: 'products/:products',

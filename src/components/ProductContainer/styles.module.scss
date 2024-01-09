@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.productContainerMainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 50px;
+
+  .actionSection {
+    h2 { color: $text_color }
+  }
+}
