@@ -33,6 +33,7 @@ export const ProductsSlider = ({ products }: Props) => {
             return (
               <SwiperSlide key={index}>
                 <ProductSlide
+                  index={index}
                   imagesUrls={[`/img/${foto}`]}
                   productName={nombre}
                   price={precio}

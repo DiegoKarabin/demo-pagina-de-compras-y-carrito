@@ -1,3 +1,8 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { RootState } from '../../store';
+import { setCurrentProduct } from '../../features/product/productSlice';
 import { Breadcrumbs } from '../../components/Breadcrumbs';
 import { CompleteYourLookContainer } from '../../components/CompleteYourLookContainer';
 import { Container } from '../../components/Container';
@@ -9,23 +14,28 @@ import styles from './styles.module.scss';
 import products from '../../data/zapato.json';
 
 export const Product = () => {
-  const { nombre, precio, referencia, foto } = products[0];
   const productDetails = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illum nulla aliquid repellendus doloremque similique minus fuga, hic ipsa, nisi praesentium nam sequi dolor voluptate quos. Ipsum ab architecto saepe, ducimus laudantium iure sint sed fuga reiciendis itaque repellat, obcaecati dolorem quia qui molestiae, nam similique maiores? Consequatur cumque temporibus nam doloremque est veritatis ducimus voluptatem vitae unde. Asperiores nostrum explicabo aliquid quasi, labore illum voluptas similique ipsa iure cumque a deserunt vel, unde enim consectetur ab repudiandae dolorum in quam illo adipisci. Iste omnis explicabo recusandae, rem libero quisquam fuga rerum voluptatum inventore sit repellat praesentium ex molestias dicta?';
   const productTechnology = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt labore et quos optio. Dicta repellendus iusto quis ab. Sint qui iure sequi adipisci laboriosam similique commodi eum necessitatibus beatae voluptas.'
+
+  const { productIndex } = useParams();
+  const dispatch = useDispatch();
+  const product = useSelector((state: RootState) => state.product.currentProduct);
+
+  useEffect(() => {
+    const numberProductIndex = Number(productIndex);
+    const product = products[numberProductIndex];
+
+    dispatch(setCurrentProduct(product));
+  }, [dispatch, productIndex]);
 
   return (
     <ContainerFluid>
       <Container className={styles.productContainer}>
         <Breadcrumbs
-          items={['hushpuppiesco', 'calzado', nombre]}
+          items={['hushpuppiesco', 'calzado', product?.nombre ?? '']}
           separator="/"
         />
-        <ProductContainer
-          name={nombre}
-          code={referencia}
-          image={foto}
-          price={precio}
-        />
+        <ProductContainer />
         <DescriptionContainer
           title="Detalles de producto"
           description={productDetails}

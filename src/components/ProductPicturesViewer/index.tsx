@@ -1,12 +1,16 @@
+import { useSelector } from 'react-redux';
 import styles from './styles.module.scss';
+import { RootState } from '../../store';
+import { imageUrlFormatter } from '../../utils';
 
 interface Props {
-  imagesUrls: string[];
-  productName: string;
   bordered?: boolean;
 }
-export const ProductPicturesViewer = ({ imagesUrls, productName, bordered }: Props) => {
+export const ProductPicturesViewer = ({ bordered }: Props) => {
   const thumbnailsClassNames = `${styles.thumbnails} ${bordered ? styles.bordered : ''}`;
+  const currentProduct = useSelector((state: RootState) => state.product.currentProduct);
+  const productName = currentProduct?.nombre;
+  const imagesUrls = [imageUrlFormatter(String(currentProduct?.foto))]
 
   return (
     <>

@@ -6,14 +6,32 @@ export const Navbar = () => (
     <div className={styles.navbar}>
       <ul className={styles.navbarList}>
         <li>
-          <Link to="/categories/men" className={styles.navbarLink}>
+          <Link to="#" className={styles.navbarLink}>
             Hombre
           </Link>
         </li>
 
         <li>
-          <Link to="/categories/women" className={styles.navbarLink}>
+          <Link to="#" className={styles.navbarLink}>
             Mujer
+          </Link>
+        </li>
+
+        <li>
+          <Link to="#" className={styles.navbarLink}>
+            Blog
+          </Link>
+        </li>
+
+        <li>
+          <Link to="#" className={styles.navbarLink}>
+            Historia
+          </Link>
+        </li>
+
+        <li>
+          <Link to="#" className={styles.navbarLink}>
+            Tienda
           </Link>
         </li>
 

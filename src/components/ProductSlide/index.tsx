@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
+import { COPFormater } from '../../utils';
 import styles from './style.module.scss';
 
 interface Props {
+  index: number;
   imagesUrls: string[];
   productName: string;
   price: number;
 }
-export const ProductSlide = ({ imagesUrls, productName, price }: Props) => (
+export const ProductSlide = ({ index, imagesUrls, productName, price }: Props) => (
   <>
     <div className={styles.productSlide}>
       <div className={styles.imageContainer}>
@@ -21,10 +24,12 @@ export const ProductSlide = ({ imagesUrls, productName, price }: Props) => (
         })}
       </div>
       <div className={styles.productName}>
-        <p>{productName}</p>
+        <Link to={`/products/${index}`}>
+          {productName}
+        </Link>
       </div>
       <div className={styles.price}>
-        <p>${price}</p>
+        <p>{COPFormater.format(price)}</p>
       </div>
       <button className={`${styles.addToCartButton} text-uppercase`}>Agregar al carrito</button>
     </div>

@@ -14,9 +14,9 @@ export const router = createBrowserRouter([
         element: <Navigate to="/products/0" />
       },
       {
-        path: 'products/:products',
+        path: 'products/:productIndex',
         element: <Product />,
       },
-    ]
+    ],
   },
 ]);

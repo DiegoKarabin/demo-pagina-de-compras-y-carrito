@@ -4,3 +4,9 @@ export interface Product {
   referencia: string;
   foto: string;
 }
+
+export interface CartProduct {
+  product: Product;
+  size: number;
+  quantity: number;
+}
