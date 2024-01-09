@@ -1,4 +1,4 @@
-import styles from './styles.module.scss';
+import styles from 'src/components/ColorSelector/styles.module.scss';
 
 interface Props {
   colorsImagesUrls: string[];

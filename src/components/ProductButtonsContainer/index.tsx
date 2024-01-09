@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../store';
-import styles from './styles.module.scss';
-import { setTryingToAddToCart } from '../../features/product/productSlice';
-import { addProductToCart } from '../../features/cart/cartSlice';
+import { RootState } from 'src/store';
+import { setTryingToAddToCart } from 'src/features/product/productSlice';
+import { addProductToCart } from 'src/features/cart/cartSlice';
+import styles from 'src/components/ProductButtonsContainer/styles.module.scss';
 
 export const ProductButtonsContainer = () => {
   const selectedSize = useSelector((state: RootState) => state.product.selectedSize);

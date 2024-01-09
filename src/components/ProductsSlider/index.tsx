@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { ProductSlide } from '../ProductSlide';
-import { Product } from '../../types';
-import styles from './styles.module.scss';
+import { ProductSlide } from 'src/components/ProductSlide';
+import { Product } from 'src/types';
+import { imageUrlFormatter } from 'src/utils';
+import styles from 'src/components/ProductsSlider/styles.module.scss';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -34,7 +35,7 @@ export const ProductsSlider = ({ products }: Props) => {
               <SwiperSlide key={index}>
                 <ProductSlide
                   index={index}
-                  imagesUrls={[`/img/${foto}`]}
+                  imagesUrls={[imageUrlFormatter(foto)]}
                   productName={nombre}
                   price={precio}
                 />

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import styles from './styles.module.scss';
-import { ActionInput } from '../ActionInput';
-import { FooterInfoTitle } from '../FooterInfoTitle';
-import { ContainerFluid } from '../ContainerFluid';
-import { Container } from '../Container';
+import styles from 'src/components/InfoLinks/styles.module.scss';
+import { ActionInput } from 'src/components/ActionInput';
+import { FooterInfoTitle } from 'src/components/FooterInfoTitle';
+import { ContainerFluid } from 'src/components/ContainerFluid';
+import { Container } from 'src/components/Container';
 
 export const InfoLinks = () => (
   <>

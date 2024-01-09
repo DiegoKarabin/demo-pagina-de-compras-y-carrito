@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import styles from './styles.module.scss';
-import { ActionInput } from '../ActionInput';
+import styles from 'src/components/BrandAndSearchForm/styles.module.scss';
+import { ActionInput } from 'src/components/ActionInput';
 
 export const BrandAndSearchForm = () => (
   <>

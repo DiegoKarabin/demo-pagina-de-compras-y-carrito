@@ -1,12 +1,11 @@
-import { ColorSelector } from '../ColorSelector';
-import { ProductButtonsContainer } from '../ProductButtonsContainer';
-import { SizeGuide } from '../SizeGuide';
-import { SizeSelector } from '../SizeSelector';
-import styles from './styles.module.scss';
-import { COPFormater } from '../../utils';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../store';
-import { imageUrlFormatter } from '../../utils';
+import { RootState } from 'src/store';
+import { ColorSelector } from 'src/components/ColorSelector';
+import { ProductButtonsContainer } from 'src/components/ProductButtonsContainer';
+import { SizeGuide } from 'src/components/SizeGuide';
+import { SizeSelector } from 'src/components/SizeSelector';
+import styles from 'src/components/ActionsSection/styles.module.scss';
+import { COPFormater, imageUrlFormatter } from 'src/utils';
 
 export const ActionsSection = () => {
   const sizes = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5];

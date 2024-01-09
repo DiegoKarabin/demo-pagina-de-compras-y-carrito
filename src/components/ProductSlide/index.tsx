@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { COPFormater } from '../../utils';
-import styles from './style.module.scss';
+import { COPFormater } from 'src/utils';
+import styles from 'src/components/ProductSlide/style.module.scss';
 
 interface Props {
   index: number;

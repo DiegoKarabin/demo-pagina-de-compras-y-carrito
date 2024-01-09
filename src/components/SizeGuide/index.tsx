@@ -1,4 +1,4 @@
-import styles from './styles.module.scss';
+import styles from 'src/components/SizeGuide/styles.module.scss';
 
 export const SizeGuide = () => (
   <>

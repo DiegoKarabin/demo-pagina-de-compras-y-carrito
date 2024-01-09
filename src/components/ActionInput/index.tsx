@@ -1,4 +1,4 @@
-import styles from './styles.module.scss';
+import styles from 'src/components/ActionInput/styles.module.scss';
 
 interface Props {
   placeholder: string;

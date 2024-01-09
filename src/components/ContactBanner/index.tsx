@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
-import { ContainerFluid } from '../ContainerFluid';
-import { Container } from '../Container';
+import { ContainerFluid } from 'src/components/ContainerFluid';
+import { Container } from 'src/components/Container';
 
 export const ContactBanner = () => (
   <>

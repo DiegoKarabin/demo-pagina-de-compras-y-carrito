@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import './styles/index.scss';
-import 'bootstrap-icons/font/bootstrap-icons.scss';
-import { store } from './store.ts';
 import { Provider } from 'react-redux';
+import { store } from 'src/store.ts';
+import App from 'src/App.tsx';
+import 'src/styles/index.scss';
+import 'bootstrap-icons/font/bootstrap-icons.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

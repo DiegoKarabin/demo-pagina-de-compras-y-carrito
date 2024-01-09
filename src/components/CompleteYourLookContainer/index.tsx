@@ -1,6 +1,6 @@
-import { Product } from '../../types';
-import { ProductsSlider } from '../ProductsSlider';
-import styles from './styles.module.scss';
+import { Product } from 'src/types';
+import { ProductsSlider } from 'src/components/ProductsSlider';
+import styles from 'src/components/CompleteYourLookContainer/styles.module.scss';
 
 interface Props {
   products: Product[];

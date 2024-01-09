@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-import styles from './styles.module.scss';
-import { RootState } from '../../store';
-import { imageUrlFormatter } from '../../utils';
+import { RootState } from 'src/store';
+import { imageUrlFormatter } from 'src/utils';
+import styles from 'src/components/ProductPicturesViewer/styles.module.scss';
 
 interface Props {
   bordered?: boolean;

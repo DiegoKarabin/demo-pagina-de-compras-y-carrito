@@ -1,6 +1,6 @@
-import { ContactBanner } from "../ContactBanner";
-import { Navigation } from "../Navigation";
-import { PromoBanner } from "../PromoBanner";
+import { ContactBanner } from 'src/components/ContactBanner';
+import { Navigation } from 'src/components/Navigation';
+import { PromoBanner } from 'src/components/PromoBanner';
 
 export const Header = () => (
   <>
@@ -10,4 +10,4 @@ export const Header = () => (
       <Navigation />
     </header>
   </>
-)
+);

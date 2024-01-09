@@ -1,13 +1,13 @@
-@import './variables';
+@import 'src/styles/variables';
 
 @font-face {
   font-family: 'Monserrat Regular';
-  src: url('../assets/fonts/montserrat/Montserrat-Regular.ttf');
+  src: url('src/assets/fonts/montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Monserrat Bold';
-  src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf');
+  src: url('src/assets/fonts/montserrat/Montserrat-Bold.ttf');
 }
 
 * {

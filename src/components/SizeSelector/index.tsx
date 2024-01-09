@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../store';
-import { setSelectedSize } from '../../features/product/productSlice';
-import styles from './styles.module.scss';
+import { RootState } from 'src/store';
+import { setSelectedSize } from 'src/features/product/productSlice';
+import styles from 'src/components/SizeSelector/styles.module.scss';
 
 interface Props {
   sizes: number[];

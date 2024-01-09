@@ -1,7 +1,7 @@
 import { ReactNode, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { resetSelectedSize, setTryingToAddToCart } from '../../features/product/productSlice';
+import { resetSelectedSize, setTryingToAddToCart } from 'src/features/product/productSlice';
 
 interface Props {
   children: ReactNode;

@@ -1,7 +1,7 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
-import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer';
-import { CleanState } from '../../components/CleanState';
+import { Header } from 'src/components/Header';
+import { Footer } from 'src/components/Footer';
+import { CleanState } from 'src/components/CleanState';
 
 export const Root = () => (
   <>

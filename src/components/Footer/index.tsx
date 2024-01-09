@@ -1,5 +1,5 @@
-import { InfoLinks } from "../InfoLinks";
-import { SocialNetworks } from "../SocialNetworks";
+import { InfoLinks } from 'src/components/InfoLinks';
+import { SocialNetworks } from 'src/components/SocialNetworks';
 
 export const Footer = () => (
   <>

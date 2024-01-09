@@ -1,5 +1,5 @@
-import { DescriptionTitle } from '../DescriptionTitle';
-import styles from './styles.module.scss';
+import { DescriptionTitle } from 'src/components/DescriptionTitle';
+import styles from 'src/components/DescriptionContainer/styles.module.scss';
 
 interface Props {
   title: string;

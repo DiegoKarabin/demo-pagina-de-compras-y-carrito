@@ -1,7 +1,8 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom';
-import { Product } from './pages/Product';
-import { ErrorPage } from './pages/Error';
-import { Root } from './pages/Root';
+import { Product } from 'src/pages/Product';
+import { ErrorPage } from 'src/pages/Error';
+import { Root } from 'src/pages/Root';
+import { Cart } from 'src/pages/Cart';
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: 'products/:productIndex',
         element: <Product />,
+      },
+      {
+        path: 'cart',
+        element: <Cart />,
       },
     ],
   },
