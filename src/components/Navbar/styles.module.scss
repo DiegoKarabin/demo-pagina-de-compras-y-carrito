@@ -19,6 +19,10 @@
 
     li.cartListItem {
       margin-left: auto;
+
+      span.cartItemsCount {
+        margin-left: 10px;
+      }
     }
   }
 

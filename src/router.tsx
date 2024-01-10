@@ -12,10 +12,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Navigate to="/products/0" />
+        element: <Navigate to="/products/1" />
       },
       {
-        path: 'products/:productIndex',
+        path: 'products/:productId',
         element: <Product />,
       },
       {

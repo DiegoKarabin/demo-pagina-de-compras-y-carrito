@@ -2,7 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'src/store';
 import { setTryingToAddToCart } from 'src/features/product/productSlice';
 import { addProductToCart } from 'src/features/cart/cartSlice';
+import { toast } from 'react-toastify';
 import styles from 'src/components/ProductButtonsContainer/styles.module.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ProductButtonsContainer = () => {
   const selectedSize = useSelector((state: RootState) => state.product.selectedSize);
@@ -10,7 +12,6 @@ export const ProductButtonsContainer = () => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    console.log('clicked');
     dispatch(setTryingToAddToCart(true));
 
     if (selectedSize === undefined) {
@@ -18,6 +19,8 @@ export const ProductButtonsContainer = () => {
     }
 
     dispatch(addProductToCart({ product: currentProduct!, size: selectedSize, quantity: 1 }));
+
+    toast.success('Producto agregado al carrito');
 
     dispatch(setTryingToAddToCart(false));
   }

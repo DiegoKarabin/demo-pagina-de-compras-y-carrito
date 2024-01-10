@@ -28,13 +28,13 @@ export const ProductsSlider = ({ products }: Props) => {
           slidesPerView={4}
           navigation
         >
-          {products.map((product, index) => {
-            const { foto, nombre, precio } = product;
+          {products.map((product) => {
+            const { foto, nombre, precio, id } = product;
 
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={id}>
                 <ProductSlide
-                  index={index}
+                  productId={id}
                   imagesUrls={[imageUrlFormatter(foto)]}
                   productName={nombre}
                   price={precio}
